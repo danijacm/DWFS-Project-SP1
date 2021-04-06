@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -112,14 +113,15 @@ span{
 }
 .ver-mas{
     width: 90%;
-    /*height: 48px;*/
+    height: 48px;
     margin: 3% auto;
     background: #00F3BB;
     margin-left: 16px;
+    display: flex;
+    justify-content: center;
 }
 .label-ver-mas{
     text-decoration: none;
-    margin-left: 33%;
     font-family: 'IBM Plex Mono', monospace;
     /*font-family: 'IBM Plex Mono-Medium' monospace;*/
     font-size: 16px;
@@ -197,6 +199,7 @@ span{
 .title-invitados{
     margin-top: 2%;
     margin-left: 5%;
+    margin-bottom: 14px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
     color: #060A24;
@@ -218,4 +221,58 @@ span{
     /*max-width: 100%;*/
     max-height: 243px;
     margin:0 0 0 0;
+}
+
+
+/*ESTILOS PARA LA SECCIÓN DE ICONOS*/
+
+.container-icons{
+    width: 100VW;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.title-icons{
+    width: 90%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    /*margin: 48px 0px 37px 16px;*/
+    margin: 3% 5% 8% 5%;
+}
+.title-icon{
+    font-family: 'IBM Plex Sans', sans-serif; /*La fuente no es la correcta (IBMPlexSans-SemiBold)*/
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    width: 90%;
+    margin-left: 7%;
+}
+.img-icon{
+    margin: 7% auto 7% auto;   
+}
+/*FIN DE LOS ESTILOS PARA LA SECCIÓN DE ICONOS*/
+
+
+/*ESTILOS PARA LA SECCIÓN DE NOVEDADES*/
+.container-novedades{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); 
+    margin-top: 12%;
+}
+.title-novedades{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    align-items: center;
+    margin: 20% 5% 3% 5%;
 }
