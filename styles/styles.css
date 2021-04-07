@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     max-width: 1024px;
 }
-
+:root{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+}
 /*---ESTILOS PARA EL HEADER*/
 .header-container{
     width: 100%;
@@ -46,6 +47,8 @@
     margin-top: -100%;
     background-color: #0000EC;
     transition: all 500ms ease;
+    padding-bottom: 8%;
+    padding-top: 4%;
 }
 .list-nav{
     list-style: none;
@@ -53,14 +56,18 @@
 .link-menu-bar{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
+    font-weight: 300;
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 28px;
     margin-left: 16px;
     text-decoration: none;
 }
+.list-item{
+    padding-top: 5%;
+}
 #check-menu:checked ~ .nav-bar{
-    margin-top: 50%;
+    margin-top: 77%;
 }
 
 #check-menu:checked+ .label-burguer .linea-sup{
@@ -82,16 +89,17 @@
 /*--ESTILOS PARA LA SECCION DEL TITULO*/
 .container-title{
     width: 100vw;
-    /*height: 240px;*/
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 10%;
 }
 .title{
     width: 90%;
-    /*height: 42px;*/
-    margin-left: 16px;
+    margin-left: 5%;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
     font-size: 36px;
     color: #060A24;
     letter-spacing: 0;
@@ -102,11 +110,11 @@ span{
 }
 .description{
     width: 90%;
-    /*height: 66px;*/
-    margin: 3% auto;
-    margin-left: 16px;
+    margin: 3% 5% 5% 5%;
+    /*margin-left: 5%;*/
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
+    font-weight: 300;
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
@@ -123,8 +131,8 @@ span{
 .label-ver-mas{
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
-    /*font-family: 'IBM Plex Mono-Medium' monospace;*/
     font-size: 16px;
+    font-weight: 500;
     color: #060A24;
     letter-spacing: 0;
     line-height: 48px;
@@ -180,10 +188,13 @@ span{
     margin-left: 5%;
 }
 .title-origen{
-    margin-top: 2%;
-    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    margin-left: 6%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
+    font-weight: 400;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
@@ -191,6 +202,7 @@ span{
 #parrafo-origen{
     margin: 2% 5% 12% 5%;
     font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
     font-size: 14px;
     color: #060A24;
     letter-spacing: 0;
@@ -202,6 +214,7 @@ span{
     margin-bottom: 14px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
+    font-weight: 400;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
@@ -212,7 +225,7 @@ span{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 270%;
+    margin-top: 280%;
     margin-bottom: 10%;
 }
 .img-galeria{
@@ -236,6 +249,7 @@ span{
     width: 90%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
+    font-weight: 400;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
@@ -243,8 +257,9 @@ span{
     margin: 3% 5% 8% 5%;
 }
 .title-icon{
-    font-family: 'IBM Plex Sans', sans-serif; /*La fuente no es la correcta (IBMPlexSans-SemiBold)*/
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
+    font-weight: 600;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
@@ -269,10 +284,44 @@ span{
 .title-novedades{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
+    font-weight: 400;
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
     line-height: 42px;
     align-items: center;
-    margin: 20% 5% 3% 5%;
+    margin: 20% 5% 5% 5%;
 }
+.btn-novedades{
+    margin-bottom: 20%;
+}
+/*FIN DE LOS ESTILOS PARA LA SECCIÓN DE NOVEDADES*/
+
+
+/*ESTILOS PARA EL FOOTER*/
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.copy-right-text{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-top: 8%;
+    margin-left: 14%;
+}
+.container-icons-footer{
+    display: flex;
+    margin: 10% auto 10% auto;
+    justify-content: space-around;
+}
+.icon-footer{
+    width: 16px;
+    height: 28px;
+    color: #060A24;
+    margin: auto 20% auto 20%;
+}
+/*FIN DE ESTILOS PARA EL FOOTER*/
