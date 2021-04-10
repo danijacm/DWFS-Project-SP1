@@ -14,20 +14,32 @@
     <header>
         <div class="header-container">
             <img class="logo" src="./images/logo.svg" alt="">
-            <input type="checkbox" id="check-menu" class="check-burguer">
-            <label for="check-menu" class="label-burguer">                
-                <div class="linea-burguer linea-sup"></div>
-                <div class="linea-burguer linea-med"></div>
-                <div class="linea-burguer linea-inf"></div>
-            </label>    
-            <nav class="nav-bar">
-                <ul class="list-nav">
-                    <li class="list-item"> <a class="link-menu-bar" href="">EPISODIOS</a></li>
-                    <li class="list-item"><a class="link-menu-bar" href="">NOSOTROS</a></li>
-                    <li class="list-item"><a class="link-menu-bar" href="">ENTREVISTAS</a></li>
-                    <li class="list-item"><a class="link-menu-bar"  href="">TÓPICOS</a></li>
-                </ul>
-            </nav> 
+            <div class="menu-mobile">
+                <input type="checkbox" id="check-menu" class="check-burguer">
+                <label for="check-menu" class="label-burguer">                
+                    <div class="linea-burguer linea-sup"></div>
+                    <div class="linea-burguer linea-med"></div>
+                    <div class="linea-burguer linea-inf"></div>
+                </label>    
+                <nav class="nav-bar">
+                    <ul class="list-nav">
+                        <li class="list-item"> <a class="link-menu-bar" href="">EPISODIOS</a></li>
+                        <li class="list-item"><a class="link-menu-bar" href="">NOSOTROS</a></li>
+                        <li class="list-item"><a class="link-menu-bar" href="">ENTREVISTAS</a></li>
+                        <li class="list-item"><a class="link-menu-bar"  href="">TÓPICOS</a></li>
+                    </ul>
+                </nav>     
+            </div>
+            <div class="menu-desktop">
+                <nav class="nav-bar">
+                    <ul class="list-nav">
+                        <li class="list-item"> <a class="link-menu-bar" href="">EPISODIOS</a></li>
+                        <li class="list-item"><a class="link-menu-bar" href="">NOSOTROS</a></li>
+                        <li class="list-item"><a class="link-menu-bar" href="">ENTREVISTAS</a></li>
+                        <li class="list-item"><a class="link-menu-bar"  href="">TÓPICOS</a></li>
+                    </ul>
+                </nav>     
+            </div>            
         </div>
     </header>
     <main>
@@ -62,8 +74,13 @@
             </div>
         </section>
         <section>
-            <div class="container-image-phone">
+            <div class="container-phone">
                 <img class="phone" src="./images/phone.png" alt="Phone History">
+            </div>
+        </section>
+        <section>
+            <div class="container-origen">
+                <!--<img class="phone" src="./images/phone.png" alt="Phone History">-->
                 <h1 class="title-origen">De dónde Venimos</h1>
                 <p id="parrafo-origen" >Our posturings, our imagined self-importance, the delusion that we have some privileged 
                     position in the Universe, are challenged by this point of pale light.<br><br> 

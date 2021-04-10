@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-width: 1024px;
 }
 :root{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -12,7 +11,7 @@
 }
 /*---ESTILOS PARA EL HEADER*/
 .header-container{
-    width: 100%;
+    width: 100vw;
     height: 44px;
     display: flex;
     justify-content: space-between;
@@ -41,10 +40,13 @@
     height: 2px;
     background-color: black;
 }
-.nav-bar{
+.menu-mobile .nav-bar{
+/*.nav-bar{*/
     position: absolute;
+    left: 0;
     width: 100%;
-    margin-top: -100%;
+    /*margin-top: -100%;*/
+    top: -1000px;
     background-color: #0000EC;
     transition: all 500ms ease;
     padding-bottom: 8%;
@@ -67,7 +69,7 @@
     padding-top: 5%;
 }
 #check-menu:checked ~ .nav-bar{
-    margin-top: 77%;
+    top: 44px;
 }
 
 #check-menu:checked+ .label-burguer .linea-sup{
@@ -84,6 +86,10 @@
     width: 20px;
     margin-top: -20px;
 }
+.menu-desktop{
+    display: none;
+}
+
 /*--FIN DE LOS ESTILOS PARA EL HEADER*/
 
 /*--ESTILOS PARA LA SECCION DEL TITULO*/
@@ -111,7 +117,6 @@ span{
 .description{
     width: 90%;
     margin: 3% 5% 5% 5%;
-    /*margin-left: 5%;*/
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     font-weight: 300;
@@ -143,7 +148,7 @@ span{
 /*--ESTILOS PARA LA SECCION DE EPISODIOS*/
 
 .container-episodios{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -169,7 +174,7 @@ span{
     margin: 3% auto;
 }
 .container-episodios :nth-child(5){
-    margin-bottom: 130px;
+    margin-bottom: 170px;
 }
 
 /*--FIN DE LOS ESTILOS PARA LA SECCION DE EPISODIOS*/
@@ -178,20 +183,26 @@ span{
 
 /*--ESTILOS PARA LA SECCION DE DONDE VENIMOS (ORIGEN)*/
 
-.container-image-phone{
+/*.container-image-phone{*/
+.container-origen{ 
     width: 100vw;
-    position: absolute;
-    margin-top: -106px;
+    /*position: absolute;*/
+    margin-top: 10px;
+}
+.container-phone{
+    margin-top: -130px;
 }
 .phone{
     width: 90%;
     margin-left: 5%;
+    position: relative;
 }
 .title-origen{
-    display: flex;
+    /*display: flex;*/
+    width: 90%;
     flex-wrap: wrap;
     margin-top: 7%;
-    margin-left: 6%;
+    margin-left: 5%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -200,6 +211,7 @@ span{
     line-height: 42px;
 }
 #parrafo-origen{
+    width: 90%;
     margin: 2% 5% 12% 5%;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 300;
@@ -209,6 +221,7 @@ span{
     line-height: 22px;
 }
 .title-invitados{
+    width: 90%;
     margin-top: 2%;
     margin-left: 5%;
     margin-bottom: 14px;
@@ -225,14 +238,14 @@ span{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 280%;
+    margin-top: 20px;
     margin-bottom: 10%;
 }
 .img-galeria{
-    width: auto;
+    width: 100%;
     height: auto;
     /*max-width: 100%;*/
-    max-height: 243px;
+    /*max-height: 243px;*/
     margin:0 0 0 0;
 }
 
@@ -240,7 +253,7 @@ span{
 /*ESTILOS PARA LA SECCIÓN DE ICONOS*/
 
 .container-icons{
-    width: 100VW;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -274,6 +287,7 @@ span{
 
 /*ESTILOS PARA LA SECCIÓN DE NOVEDADES*/
 .container-novedades{
+    width: 100vw;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     display: flex;
     flex-direction: column;
@@ -300,6 +314,7 @@ span{
 
 /*ESTILOS PARA EL FOOTER*/
 .container-footer{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -307,6 +322,7 @@ span{
 .copy-right-text{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
+    font-weight: 300;
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
@@ -314,6 +330,7 @@ span{
     margin-left: 14%;
 }
 .container-icons-footer{
+    width: 100vw;
     display: flex;
     margin: 10% auto 10% auto;
     justify-content: space-around;
@@ -322,6 +339,22 @@ span{
     width: 16px;
     height: 28px;
     color: #060A24;
-    margin: auto 20% auto 20%;
+    /*padding: auto 20% auto 20%;*/
 }
 /*FIN DE ESTILOS PARA EL FOOTER*/
+
+
+/******************************************************************************RESPONDIVE STILES***********************************************************************************************/
+
+@media screen and (min-width: 768px){
+
+    .menu-mobile{
+        display: none;
+    }
+    .menu-desktop{
+        display: block;
+    }
+    .link-menu-bar{
+        color: black;
+    }
+}
