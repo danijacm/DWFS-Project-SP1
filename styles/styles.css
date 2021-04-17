@@ -9,14 +9,13 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
 }
-/*---ESTILOS PARA EL HEADER*/
+/*---------------ESTILOS PARA EL HEADER-------------------*/
 .header-container{
     width: 100vw;
     height: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*position: fixed;*/
 }
 .logo{
     width: 24px;
@@ -41,11 +40,9 @@
     background-color: black;
 }
 .menu-mobile .nav-bar{
-/*.nav-bar{*/
     position: absolute;
     left: 0;
     width: 100%;
-    /*margin-top: -100%;*/
     top: -1000px;
     background-color: #0000EC;
     transition: all 500ms ease;
@@ -68,12 +65,6 @@
 .list-item{
     padding-top: 8px;
 }
-/*.list-item:hover + .link-menu-bar{
-    font-size: 16px;
-    color: #00F3BB;
-    letter-spacing: 0;
-    line-height: 28px;
-}*/
 
 #check-menu:checked ~ .nav-bar{
     top: 44px;
@@ -96,16 +87,13 @@
 .menu-desktop{
     display: none;
 }
+/*------------------FIN DE LOS ESTILOS PARA EL HEADER-------------------------*/
 
-/*--FIN DE LOS ESTILOS PARA EL HEADER*/
 
-/*--ESTILOS PARA LA SECCION DEL TITULO*/
+
+/*-------------------ESTILOS PARA LA SECCION DEL TITULO------------------------*/
 .container-title{
     width: 100vw;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;*/
 }
 .title{
     width: 90%;
@@ -151,7 +139,6 @@ span{
     color: #060A24;
     letter-spacing: 0;
     line-height: 48px;
-    /*padding-left: 96px;*/
 }
 
 .ver-mas:hover{
@@ -161,20 +148,17 @@ span{
     color: #FFFFFF;
 }
 
-/*--FIN DE LOS ESTILOS PARA LA SECCION DEL TITULO*/
+/*-------------FIN DE LOS ESTILOS PARA LA SECCION DEL TITULO----------------*/
 
 
-/*--ESTILOS PARA LA SECCION DE EPISODIOS*/
+
+
+/*-------------ESTILOS PARA LA SECCION DE EPISODIOS-------------------------*/
 
 .container-episodios{
     width: 100vw;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;*/
     background-color: #0000EC;
     clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
-    /*margin: 5% auto;*/
 }
 .episodios-aux{
     width: 100%;
@@ -197,18 +181,16 @@ span{
     margin-left: 5%;
     margin-bottom: 11px;
 }
-/*.container-episodios :nth-child(5){
-    margin-bottom: 170px;
-}*/
 .last-ifrem{
     margin-bottom: 37px;
     padding-bottom: 140px;
 }
-/*--FIN DE LOS ESTILOS PARA LA SECCION DE EPISODIOS*/
+
+/*-----------FIN DE LOS ESTILOS PARA LA SECCION DE EPISODIOS-----------------*/
 
 
 
-/*--ESTILOS PARA LA SECCION DE DONDE VENIMOS (ORIGEN)*/
+/*-----------ESTILOS PARA LA SECCION DE DONDE VENIMOS (ORIGEN)---------------*/
 
 .container-phone{
     width: 100vw;
@@ -221,14 +203,11 @@ span{
 }
 .container-origen{ 
     width: 100vw;
-    /*position: absolute;*/
     margin-top: 10px;
 }
 .title-origen{
-    /*width: 288px;*/
     width: 90%;
     margin-top: 27px;
-    /*margin-left: 16px;*/
     margin-left: 5%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
@@ -238,8 +217,6 @@ span{
     line-height: 42px;
 }
 #parrafo-origen{
-    /*width: 288px;
-    margin-left: 16px;*/
     width: 90%;
     margin-left: 5%;
     margin-top: 8px;
@@ -251,8 +228,6 @@ span{
     line-height: 22px;
 }
 .title-invitados{
-    /*width: 288px;
-    margin-left: 16px;*/
     width: 90%;
     margin-left: 5%;
     margin-top: 54px;
@@ -267,12 +242,10 @@ span{
 .title-invitados-desktop{
     display: none;
 }
-/*--FIN DE LOS ESTILOS PARA LA SECCION DE DONDE VENIMOS (ORIGEN)*/
+/*-------FIN DE LOS ESTILOS PARA LA SECCION DE DONDE VENIMOS (ORIGEN)-----*/
 
 .container-galeria-img{
     width: 100vw;
-    /*display: flex;
-    flex-direction: column;*/
     margin-top: 20px;
     margin-bottom: 10%;
 }
@@ -282,22 +255,15 @@ span{
 .img-galeria{
     width: 100%;
     height: auto;
-    /*max-width: 100%;*/
-    /*max-height: 243px;*/
     margin:-4px 0 0 0;
 }
 
-
-/*ESTILOS PARA LA SECCIÓN DE ICONOS*/
+/*-------ESTILOS PARA LA SECCIÓN DE ICONOS-------*/
 
 .container-icons{
     width: 100vw;
-    /*display: flex;
-    flex-direction: column;*/
 }
 .title-icons{
-    /*width: 288px;
-    margin-left: 16px;*/
     width: 90%;
     margin-left: 5%;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -309,13 +275,11 @@ span{
     margin-top: 48px;
 }
 .agrupa-icon-text{
-    /*width: 100%;*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .img-icon{
-    /*margin: 7% auto 7% auto;*/
     width: 104px;
     height: 104px;   
 }
@@ -343,28 +307,20 @@ span{
     letter-spacing: 0;
     text-align: center;
     width: 100%;
-    /*margin-left: 7%;*/
 }
 
+/*--------FIN DE LOS ESTILOS PARA LA SECCIÓN DE ICONOS--------*/
 
 
-/*FIN DE LOS ESTILOS PARA LA SECCIÓN DE ICONOS*/
-
-
-/*ESTILOS PARA LA SECCIÓN DE NOVEDADES*/
+/*---------ESTILOS PARA LA SECCIÓN DE NOVEDADES----------*/
 .container-novedades{
     width: 100vw;
     height: 341px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;*/
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); 
     margin-top: 42px;
 }
 .title-novedades{
-    /*width: 288px;
-    margin-left: 16px;*/
     width: 90%;
     margin-left: 5%;
     padding-top: 64px;
@@ -377,31 +333,22 @@ span{
     text-align: center;
     line-height: 42px;
 }
-/*.btn-novedades{
-    margin-bottom: 67px;
-}*/
-/*FIN DE LOS ESTILOS PARA LA SECCIÓN DE NOVEDADES*/
+/*---------FIN DE LOS ESTILOS PARA LA SECCIÓN DE NOVEDADES-----------*/
 
 
-/*ESTILOS PARA EL FOOTER*/
+/*---------ESTILOS PARA EL FOOTER---------------*/
 .container-footer{
     width: 100vw;
     text-align: center;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;*/
 }
 .copy-right-text{
-    /*width: 70%;*/
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
     font-weight: 300;
     color: #060A24;
     letter-spacing: 0;
     line-height: 22px;
-    margin-top: 24px;
-    /*margin-left: 15%;*/    
+    margin-top: 24px;    
 }
 .container-icons-footer{
     width: 100%;
@@ -414,38 +361,20 @@ span{
     width: 16px;
     height: 28px;
     color: #060A24;
-    /*padding: auto 20% auto 20%;*/
 }
-/*FIN DE ESTILOS PARA EL FOOTER*/
+/*----------FIN DE ESTILOS PARA EL FOOTER-----------*/
 
 
 /******************************************************************************RESPONDIVE STILES***********************************************************************************************/
 
 @media screen and (min-width: 1024px){
 
-    .menu-mobile{
-        display: none;
-    }
-    .menu-desktop{
-        display: block;
-    }
-    .link-menu-bar{
-        color: black;
-    }
     .logo{
         width: 36px;
         height: 36px;
         border-radius: 50%;
         margin-left: 100px;
         margin-top: 22px;
-    }
-    .nav-bar .list-nav{
-        margin-right: 100px;
-        margin-top: 26px;
-    }
-    .list-nav .list-item{
-        display: inline-block;
-        padding: 0 12px 0 12px;
     }
     .title{
         width: 740px;
@@ -459,6 +388,23 @@ span{
         height: 48px;
         font-size: 16px;
         margin-left: 164px;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    .menu-desktop{
+        display: block;
+    }
+    .link-menu-bar{
+        color: black;
+    }
+    .nav-bar .list-nav{
+        margin-right: 100px;
+        margin-top: 26px;
+    }
+    .list-nav .list-item{
+        display: inline-block;
+        padding: 0 12px 0 12px;
     }
     .dot{
         font-size: 64px;
@@ -536,43 +482,63 @@ span{
     .galeria-img-desktop{
         display: flex;
     }
+    .container-galeria-img{
+        margin-bottom: 0;
+    }
+    .img-galeria{
+        width: 33.33%;
+    }
     .title-icons{
         width: 41%;
         margin-top: 64px;
+        margin-bottom: 69px;
         margin-left: 13.88%;
         font-size: 48px;
     }
     .sub-container-icons{
-        width: 100%;
-        height: 200px;
+        width: 72.22%;
+        margin-left: 13.88%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
         
     }
     .agrupa-icon-text{
-        width: 200px;
-        height: 200px;
+        width: 18.05%;
+        height: 210px;
+        justify-content: flex-end;
     }
-
-    .container-icons-footer{
-        width: 30%;
-        margin-right: 100px;
-        margin-top: 36px;
+    .img-icon{
+        width: 260px;
+        height: 130px;
+        text-align: center;
+        margin-top: 0;
     }
-    .img-galeria{
-        width: 33.33%;
+    .title-icon{
+        width: 220px;
+        height: 64px;
+    }
+    .container-novedades{
+        height: 518px;
+        clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%); 
+        margin-top: 0;
     }
     .title-novedades{
         width: 49%;
         margin-left: 26%;
         font-size: 48px;
+        padding-top: 213px;
     }
     .btn-novedades{
         width: 24%;
         background: #00F3BB;
         margin-left: 38%;
         text-align: center;
+    }
+    .container-icons-footer{
+        width: 30%;
+        margin-right: 100px;
+        margin-top: 36px;
     }
     .container-footer{
         display: flex;
