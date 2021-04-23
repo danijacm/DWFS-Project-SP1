@@ -188,7 +188,7 @@ span{
 
 iframe{
     width: 100%;
-    height: auto;
+    /*height: auto;*/
     border: 0;
 }
 
